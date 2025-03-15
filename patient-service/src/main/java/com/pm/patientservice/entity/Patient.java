@@ -1,0 +1,80 @@
+package com.pm.patientservice.entity;
+
+import jakarta.persistence.*;
+import jakarta.validation.constraints.Email;
+import jakarta.validation.constraints.NotNull;
+
+import java.time.LocalDate;
+import java.util.UUID;
+
+@Entity
+public class Patient {
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private UUID id;
+
+    @NotNull
+    private String name;
+
+    @NotNull
+    @Email
+    @Column(unique = true)
+    private String email;
+
+    @NotNull
+    private String address;
+
+    @NotNull
+    private LocalDate dateBirth;
+
+    @NotNull
+    private LocalDate registeredDate;
+
+    public @NotNull LocalDate getRegisteredDate() {
+        return registeredDate;
+    }
+
+    public void setRegisteredDate(@NotNull LocalDate registeredDate) {
+        this.registeredDate = registeredDate;
+    }
+
+    public @NotNull LocalDate getDateBirth() {
+        return dateBirth;
+    }
+
+    public void setDateBirth(@NotNull LocalDate dateBirth) {
+        this.dateBirth = dateBirth;
+    }
+
+    public @NotNull String getAddress() {
+        return address;
+    }
+
+    public void setAddress(@NotNull String address) {
+        this.address = address;
+    }
+
+    public @NotNull @Email String getEmail() {
+        return email;
+    }
+
+    public void setEmail(@NotNull @Email String email) {
+        this.email = email;
+    }
+
+    public @NotNull String getName() {
+        return name;
+    }
+
+    public void setName(@NotNull String name) {
+        this.name = name;
+    }
+
+    public UUID getId() {
+        return id;
+    }
+
+    public void setId(UUID id) {
+        this.id = id;
+    }
+}
