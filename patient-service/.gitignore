@@ -1,0 +1,84 @@
+# Ignore compiled classes and build artifacts
+target/
+build/
+out/
+*.class
+
+# Maven-specific ignores
+.mvn/
+.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+# Gradle-specific ignores
+.gradle/
+build/
+gradle-app.setting
+
+# STS (Spring Tool Suite) specific ignores
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings/
+.springBeans
+.sts4-cache
+
+# IntelliJ IDEA specific ignores
+.idea/
+*.iws
+*.iml
+*.ipr
+
+# NetBeans specific ignores
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+# VS Code specific ignores
+.vscode/
+
+# Logs and temporary files
+logs/
+*.log
+nohup.out
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+
+# Docker-specific ignores
+.dockerignore
+docker-compose.override.yml
+
+# Kubernetes (Optional, if using K8s)
+*.yaml
+*.yml
+*.tfstate
+.terraform/
+
+# Environment & Secrets
+.env
+.env.local
+*.key
+*.pem
+*.crt
+*.pfx
+*.p12
+
+# Database files
+*.db
+*.sqlite
+*.h2.db
+*.mv.db
+*.derby
+*.sql
+
+# Ignore HELP.md (unless it's intentionally committed)
+HELP.md

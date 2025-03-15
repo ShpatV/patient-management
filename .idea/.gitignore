@@ -1,0 +1,107 @@
+# OS-specific files
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+
+# IDE-specific files
+.idea/
+*.iml
+*.ipr
+*.iws
+.vscode/
+project/
+target/
+bin/
+out/
+*.class
+
+# Logs
+logs/
+*.log
+*.log.*
+nohup.out
+
+# Maven
+.mvn/
+mvnw
+mvnw.cmd
+target/
+!target/classes/
+!target/maven-status/
+!target/generated-sources/
+
+# Gradle
+.gradle/
+build/
+*.gradle
+gradle-app.setting
+
+# Node.js (if frontend is included)
+node_modules/
+dist/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log
+
+# Docker
+docker-compose.override.yml
+.dockerignore
+
+# Kubernetes & Helm
+*.yaml
+*.yml
+*.tfstate
+*.tfstate.backup
+.terraform/
+k8s/secrets.yaml
+
+# Security & Credentials
+.env
+*.env.local
+*.secret
+*.key
+*.pem
+*.crt
+*.pfx
+*.p12
+
+# Database
+*.db
+*.sqlite
+*.h2.db
+*.mv.db
+*.derby
+*.sql
+
+# Spring Boot specific
+*.jar
+*.war
+*.ear
+spring-boot-admin/
+
+# IntelliJ IDEA-specific
+/shelf/
+/workspace.xml
+/httpRequests/
+/dataSources/
+/dataSources.local.xml
+
+# Eclipse-specific
+.project
+.classpath
+.c9/
+.settings/
+.apt_generated/
+.factorypath
+.springBeans
+
+# MacOS
+.AppleDouble
+.LSOverride
+
+# Miscellaneous
+*.bak
+*.tmp
+*.pid
